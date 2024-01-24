@@ -30,6 +30,7 @@ scene.add(dirLight);
 
 const loader = new GLTFLoader();
 loader.load("scan2.glb", function (gltf) {
+  gltf.scene.scale.set(2.0, 2.0, 2.0);
   scene.add(gltf.scene);
 });
 
